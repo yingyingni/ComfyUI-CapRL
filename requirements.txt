@@ -1,0 +1,10 @@
+# CapRL-Video 推理环境依赖（安装在独立 venv/conda 中，勿装到 ComfyUI 主环境）
+# subprocess 模式下 ComfyUI 自身只需 pillow/numpy/torch（ComfyUI 已自带）
+transformers>=4.57.0
+torch>=2.4.0
+accelerate>=0.30.0
+qwen-vl-utils>=0.0.14
+decord>=0.6.0
+av
+pillow
+requests

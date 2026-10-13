@@ -1,0 +1,16 @@
+{
+  "1": {
+    "class_type": "CapRLCaption",
+    "inputs": {
+      "media": "your_video.mp4",
+      "mode": "timeline",
+      "fps": 2.0,
+      "max_tokens": 2048,
+      "model": "/data/ComfyUI/shared_models/LLM/CapRL-Video-4B",
+      "python_bin": "/root/.local/caprl_venv/bin/python",
+      "custom_prompt": "",
+      "save_txt": true
+    },
+    "_meta": { "title": "CapRL Caption (video → timestamped script)" }
+  }
+}

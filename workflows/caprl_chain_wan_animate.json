@@ -1,0 +1,20 @@
+{
+  "1": {
+    "class_type": "CapRLLoadCaption",
+    "inputs": {
+      "source": "{{caprl_caption}}",
+      "timeout": 30
+    },
+    "_meta": { "title": "CapRL Load Caption (上游任务的 caption.txt URL 由串行机制注入)" }
+  },
+  "2": {
+    "class_type": "WanVideoTextEncodeCached",
+    "inputs": {
+      "model_name": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "precision": "bf16",
+      "positive_prompt": ["1", 0],
+      "negative_prompt": "nsfw, text, watermark, bad anatomy, worst quality, low quality, blurry"
+    },
+    "_meta": { "title": "下游文本编码：caption → positive_prompt" }
+  }
+}
